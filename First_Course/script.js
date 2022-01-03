@@ -109,3 +109,44 @@ var person2 = {
     hobbies : "Listen Music"
 }
 console.log(person2)
+
+var person3 = {}
+person3['name'] = 'Awais';
+console.log(person3)
+
+function cal(a, b, opt){
+    switch(opt){
+        case '+' :
+            return console.log('Addition: ' + (a+b))
+        case '-':
+            return console.log('Subtract: ' + (a-b))
+        case '*':
+            return console.log('Multiply: ' + (a*b))
+        case '/':
+            return console.log('Devide: ' + (a/b));
+        default:
+            return console.log('Operator is not right')
+    }
+}
+
+cal(5,5,'+')
+cal(4,5,'-')
+
+const buttons = document.getElementsByTagName("button")
+for(var i = 0; i < buttons.length; i++){
+    const button = buttons[i];
+    button.addEventListener("click", function(){
+        console.log("Button " + i + " pressed")
+    })
+}
+
+var a = Math.random(100)
+console.log(a)
+
+var date = new Date(2022,12,31,23,59,59)
+console.log(date)
+
+var a = '2 + 2'
+var b = new String("2+2")
+console.log(eval(a))
+console.log(eval(b))
