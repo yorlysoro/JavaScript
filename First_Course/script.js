@@ -150,3 +150,21 @@ var a = '2 + 2'
 var b = new String("2+2")
 console.log(eval(a))
 console.log(eval(b))
+
+var a = ['apple', 'orange', 'banana', 'cherry']
+
+console.log("Classic for")
+for(var i = 0; i < a.length; i++){
+    console.log(a[i])
+}
+a.push("pineapple")
+a.splice(1,2)
+a.reverse()
+console.log("ForEach Loop")
+ a.forEach(function (value, index){
+     console.log(index + ": " +value)
+ })
+var b = 'hello'
+console.log(Array.isArray(a))
+console.log(Array.isArray(b))
+
