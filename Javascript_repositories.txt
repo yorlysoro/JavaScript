@@ -6,3 +6,4 @@ https://github.com/kubowania/Frogger
 https://github.com/kubowania/Tetris
 https://github.com/kubowania/memory-game
 Search Repositories with exercises on DAO with JavaScript 
+https://github.com/john-smilga/js-budget-setup
