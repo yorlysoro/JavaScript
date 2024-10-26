@@ -8,3 +8,4 @@ https://github.com/kubowania/memory-game
 Search Repositories with exercises on DAO with JavaScript 
 https://github.com/john-smilga/js-budget-setup
 https://codesandbox.io/p/sandbox/z2pqr9620m
+https://github.com/chrokh/fp-games
