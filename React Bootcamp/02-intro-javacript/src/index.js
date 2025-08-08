@@ -140,3 +140,47 @@ console.log(sum(1, 2, 3, 4, 5)); // Output: 15
 // Rest operator with destructuring
 const [firstNum, ...restNums] = [1, 2, 3, 4, 5];
 console.log(firstNum, restNums); // Output: 1 [2, 3, 4, 5]
+
+import { heroes } from './heroes';
+
+console.log(heroes);
+
+// find
+const hero = heroes.find(h => h.id === 1);
+console.log(hero);
+
+// filter
+const dcHeroes = heroes.filter(h => h.owner === 'DC');
+console.log(dcHeroes);
+
+// Promesas
+
+const getHeroByIdAsync = (id) => {
+    return new Promise((resolve, reject) => {
+        const hero = heroes.find(h => h.id === id);
+        if (hero) {
+            resolve(hero);
+        } else {
+            reject(`Hero with id ${id} not found`);
+        }
+    });
+};
+
+getHeroByIdAsync(1)
+    .then(hero => console.log(hero))
+    .catch(err => console.error(err));
+
+const promesa = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        const hero = heroes.find(h => h.id === 1);
+        if (hero) {
+            resolve(hero);
+        } else {
+            reject(`Hero with id 1 not found`);
+        }
+    }, 2000);
+});
+
+promesa
+    .then(hero => console.log(hero))
+    .catch(err => console.error(err));
