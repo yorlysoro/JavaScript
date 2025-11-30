@@ -8,3 +8,15 @@ const carrito = [
     { nombre: 'Teclado', precio: 400 },
     { nombre: 'Celular', precio: 700 },
 ]
+
+// some method
+const existe = meses.some( mes => mes === 'Enero' );
+console.log(existe);
+
+const existe2 = carrito.some( producto => producto.nombre === 'Celular' );
+console.log(existe2);
+
+// includes method
+const meses2 = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio'];
+const incluye = meses2.includes('Diciembre');
+console.log(incluye);
